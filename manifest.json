@@ -11,5 +11,5 @@
     "icons": {
         "128": "camera_128.png"
     },
-    "permissions": ["tabs"]
+    "permissions": ["tabs","storage"]
 }

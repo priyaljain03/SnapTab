@@ -1,0 +1,56 @@
+.container {
+    width:350px;
+    height:200px;
+    background-color:rgb(107, 100, 100);;
+}
+
+html {
+    border-radius:50px;
+}
+
+/* body {
+    background-color:rgb(107, 100, 100);
+    border:1px white solid;
+    
+} */
+
+#snapTab {
+    background-color: rosybrown;
+    color:white
+}
+
+#snapTab:hover {
+    background-color: yellow;
+    opacity:0.4;
+    color:white;
+}
+
+#manageBtn {
+    background-color: yellowgreen;
+    color: white;
+    
+}
+
+.logo {
+    padding-top: 15px !important;
+    color:rgb(201, 204, 39);
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+p{
+    color: white;
+    font-family:cursive;
+    font-size: 12px;
+}
+
+.footer {
+    background-color: rgb(126, 172, 84);
+    height: 100%;
+}
+
+
+
+
