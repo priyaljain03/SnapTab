@@ -3,8 +3,13 @@
     "description": "A chrome extension to save all currently opened tabs in chrome with time stamp",
     "version": "1.0",
     "manifest_version": 3,
+    
     "action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": "camera_19.png"
+    },
+    "icons": {
+        "128": "camera_128.png"
     },
     "permissions": ["tabs"]
 }
