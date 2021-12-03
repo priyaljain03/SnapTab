@@ -11,11 +11,28 @@ document.getElementById("snapTab").addEventListener('click',()=>{
         let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
         let dateTimeNow = date + " " + time
         
-       
+        let obj ={
+            timestamp:dateTimeNow,
+            Tabs : tabs
+        } 
+
+        chrome.storage.local.get("Alltabs",(items)=>{
+            console.log(items)
+            let listOfItems ;
+            if(JSON.stringify(items) == '{}'){
+                console.log("Here")
+                listOfItems = []
+            }else{
+                console.log("Here2")
+                listOfItems = items["Alltabs"]
+            }
+            listOfItems.push(obj)
+            chrome.storage.local.set({"Alltabs":listOfItems},()=>{         
+            })
+        }) 
     })
-    
 })
 
 document.getElementById("manageBtn").addEventListener('click',()=>{
-    chrome.tabs.create({active:true})
+    chrome.runtime.openOptionsPage() 
 })

@@ -1,34 +1,35 @@
-.container {
+#cont {
     width:350px;
-    height:200px;
-    background-color:rgb(107, 100, 100);;
+    height:235px;
+    
 }
 
 html {
     border-radius:50px;
 }
 
-/* body {
+body {
     background-color:rgb(107, 100, 100);
     border:1px white solid;
-    
-} */
+}
 
 #snapTab {
-    background-color: rosybrown;
+    background-color: red;
     color:white
 }
 
 #snapTab:hover {
-    background-color: yellow;
-    opacity:0.4;
+    opacity:0.6;
     color:white;
 }
 
 #manageBtn {
     background-color: yellowgreen;
     color: white;
-    
+}
+
+#manageBtn:hover{
+    opacity: 0.6;
 }
 
 .logo {
@@ -36,20 +37,58 @@ html {
     color:rgb(201, 204, 39);
     font-size: 25px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
     text-shadow: 2px 2px 8px #FF0000;
 }
 
 p{
     color: white;
     font-family:cursive;
-    font-size: 12px;
+    font-size: 10px;
+    text-shadow: 2px 2px 8px #FF0000;
+    margin:0 !important;
+    color:rgb(201, 204, 39);
 }
 
-.footer {
-    background-color: rgb(126, 172, 84);
-    height: 100%;
+.card {
+    max-height: 250px;
+    width: 300px;
+    overflow-y: scroll;
+    background-color:aquamarine;
+    border-radius: 20px;
+    border: 2px solid salmon
 }
+
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background:rgb(201, 204, 39);
+    border-bottom: 0px;
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rosybrown;
+    border-radius: 50px;
+    height: 20px;
+  }
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: plum
+  }
+
+
+li ,a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 10px;
+    color:chocolate
+}
+
+
+
 
 
 
