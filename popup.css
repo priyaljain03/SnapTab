@@ -1,16 +1,13 @@
 #cont {
     width:350px;
-    height:235px;
+    height:200px;
     
 }
 
-html {
-    border-radius:50px;
-}
 
 body {
-    background-color:rgb(107, 100, 100);
-    border:1px white solid;
+    background-color: rgb(23, 206, 212);
+    border:2px solid salmon
 }
 
 #snapTab {
@@ -34,7 +31,7 @@ body {
 
 .logo {
     padding-top: 15px !important;
-    color:rgb(201, 204, 39);
+    color: rgb(250, 253, 56);
     font-size: 25px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-shadow: 2px 2px 8px #FF0000;
@@ -46,14 +43,14 @@ p{
     font-size: 10px;
     text-shadow: 2px 2px 8px #FF0000;
     margin:0 !important;
-    color:rgb(201, 204, 39);
+    color: yellow
 }
 
 .card {
     max-height: 250px;
     width: 300px;
     overflow-y: scroll;
-    background-color:aquamarine;
+    background-color:yellow;
     border-radius: 20px;
     border: 2px solid salmon
 }
@@ -84,12 +81,14 @@ li ,a {
     text-decoration: none;
     list-style: none;
     font-size: 10px;
-    color:chocolate
+    font-family: cursive;
+    color:blueviolet
 }
 
+a:hover {
+    color: red
+}
 
-
-
-
-
-
+.align {
+    text-align: center;
+}

@@ -8,7 +8,7 @@ chrome.storage.local.get("Alltabs",(items)=>{
         <div class="col">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">${item.timestamp}</h5>
+            <h5 class="card-title" style="font-size:15px;color:salmon">${item.timestamp}</h5>
             ${item.Tabs.map(tab=>{
               return (`<li class="card-subtitle mb-2 text-muted"><a href="${tab}">${tab}</a></li>`)
           }).join("")
