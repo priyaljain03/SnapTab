@@ -7,6 +7,9 @@
 
 body {
     background-color: rgb(23, 206, 212);
+}
+
+.salmon-border {
     border:2px solid salmon
 }
 
@@ -50,9 +53,14 @@ p{
     max-height: 250px;
     width: 300px;
     overflow-y: scroll;
-    background-color:yellow;
-    border-radius: 20px;
-    border: 2px solid salmon
+    background-color:rgb(1, 1, 97);
+    border-radius: 13px;
+    border: 2px solid yellow
+}
+
+
+.card-title {
+    color:rgb(62, 250, 25)
 }
 
 ::-webkit-scrollbar {
@@ -62,11 +70,12 @@ p{
   ::-webkit-scrollbar-track {
     background:rgb(201, 204, 39);
     border-bottom: 0px;
+    border-radius: 10px;
   }
 
   /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rosybrown;
+    background: purple;
     border-radius: 50px;
     height: 20px;
   }
@@ -80,9 +89,9 @@ p{
 li ,a {
     text-decoration: none;
     list-style: none;
-    font-size: 10px;
+    font-size: 12px;
     font-family: cursive;
-    color:blueviolet
+    color: rgb(185, 226, 104)
 }
 
 a:hover {
@@ -91,4 +100,20 @@ a:hover {
 
 .align {
     text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+h6:hover {
+    cursor: pointer;
+    background-color: yellow !important;
+    color: green
+}
+
+.closeBtn {
+    height:min-content;
 }

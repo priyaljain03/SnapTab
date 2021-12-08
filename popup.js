@@ -1,4 +1,5 @@
-document.getElementById("snapTab").addEventListener('click',()=>{
+document.getElementById("snapTab").addEventListener('click',(e)=>{
+    console.log(e)
     let tabs = []
     chrome.windows.getAll({populate:true}).then((data)=>{
         data.forEach((item)=>{
@@ -26,12 +27,15 @@ document.getElementById("snapTab").addEventListener('click',()=>{
                 console.log("Here2")
                 listOfItems = items["Alltabs"]
             }
-            listOfItems.push(obj)
-            chrome.storage.local.set({"Alltabs":listOfItems},()=>{         
+            listOfItems.unshift(obj)
+            chrome.storage.local.set({"Alltabs":listOfItems},()=>{   
+                e.target.innerHTML = "Snapped"
+                // window.close()  
             })
         }) 
     })
 })
+
 
 document.getElementById("manageBtn").addEventListener('click',()=>{
     chrome.runtime.openOptionsPage() 

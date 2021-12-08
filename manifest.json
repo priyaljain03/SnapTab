@@ -6,10 +6,12 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": "camera_19.png"
-    },
-    "options_page": "manage.html",
+    }, 
     "icons": {
         "128": "camera_128.png"
     },
+    "options_page": "manage.html",
     "permissions": ["tabs","storage"]
     }
+
+  
