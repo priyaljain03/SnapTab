@@ -1,119 +1,158 @@
+/* Popup box */
 #cont {
     width:350px;
-    height:200px;
-    
+    height:300px; 
 }
-
 
 body {
-    background-color: rgb(23, 206, 212);
+    background: #2c302d;
 }
 
-.salmon-border {
-    border:2px solid salmon
+
+/* Logo CSS */
+.logo {
+    color: white;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* Popup text */
+p{
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size: 10px;
+    margin:0 !important;
+}
+
+.header{
+    height: 80px;
+    border-bottom: 1px solid white;
+}
+
+.body {
+    margin-top: 10px;
+    height : 150px
+}
+
+.footer {
+    height : 20px
 }
 
 #snapTab {
-    background-color: red;
-    color:white
+    color:white;
+    box-shadow: 8px 10px 8px black;
+    font-weight: bold;
 }
 
+
 #snapTab:hover {
-    opacity:0.6;
     color:white;
+    box-shadow: 0px 0px 0px black;
 }
 
 #manageBtn {
     background-color: yellowgreen;
-    color: white;
+    color: black;
+    height: 40px;
+    width: 130px;
+    float: right;
 }
 
 #manageBtn:hover{
     opacity: 0.6;
+    box-shadow: 8px yellow
 }
 
-.logo {
-    padding-top: 15px !important;
-    color: rgb(250, 253, 56);
-    font-size: 25px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 2px 2px 8px #FF0000;
-}
 
-p{
-    color: white;
-    font-family:cursive;
-    font-size: 10px;
-    text-shadow: 2px 2px 8px #FF0000;
-    margin:0 !important;
-    color: yellow
-}
-
+/* Card Related CSS */
 .card {
-    max-height: 250px;
-    width: 300px;
+    height: 280px;
+    width: 80% !important;
+    max-height: 350px;
+    padding: auto;
+    background: #242625;
+    border-radius: 10px;
+    box-shadow: 25px 0px 50px #1b1c1b, -25px -25px 50px #2d302f;
     overflow-y: scroll;
-    background-color:rgb(1, 1, 97);
     border-radius: 13px;
-    border: 2px solid yellow
+    position: flex;
+    margin-left: 10%;
+    margin-top: 5%
 }
 
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-top:-10px;
+}
+
+.card-header {
+    height: 60px;
+    background-color:#242625;
+}
 
 .card-title {
-    color:rgb(62, 250, 25)
+    color:yellowgreen;
+    font-size:25px;
+    font-family: "Roboto", sans-serif;
 }
 
-::-webkit-scrollbar {
-    width: 8px; 
-  }
+.card-container {
+    display:grid;
+    width:80%;
+    height: 70%;
+    background-color:#242625;
+    align-items: center;
+    border-radius:50px
+    
+}
 
-  ::-webkit-scrollbar-track {
-    background:rgb(201, 204, 39);
-    border-bottom: 0px;
-    border-radius: 10px;
-  }
-
-  /* Handle */
-::-webkit-scrollbar-thumb {
-    background: purple;
-    border-radius: 50px;
-    height: 20px;
-  }
-
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: plum
-  }
-
-
+/* Card Content */
 li ,a {
     text-decoration: none;
     list-style: none;
     font-size: 12px;
-    font-family: cursive;
-    color: rgb(185, 226, 104)
+    font-family: "Roboto", sans-serif;
+    color: white
 }
 
 a:hover {
-    color: red
+    color: rgb(189, 186, 189)
 }
 
-.align {
-    text-align: center;
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 1px; 
+ }
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 50px;
+    height: 20px;
+  }
+
+
+/* Buttons */
+.delete {
+    position: absolute;
+    right: 0;
+    top:0;
+    display:block;
+    font-size: 9px;
+    color: #000;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-h6:hover {
-    cursor: pointer;
-    background-color: yellow !important;
-    color: green
-}
-
-.closeBtn {
-    height:min-content;
+.openAll {
+    background: yellowgreen;
+    border-radius: 50px;
+    color:black;
+    font-weight: bold;
+    cursor:pointer;
+    border: none;
+    margin-top:40%;
+    margin: 34%
 }

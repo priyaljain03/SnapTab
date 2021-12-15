@@ -3,34 +3,26 @@ function showItems (){
   chrome.storage.local.get("Alltabs",(items)=>{
     let listOfItems = items["Alltabs"];
     let html = ``
+    let counter = 0
     listOfItems.forEach((item,index)=>{
         html+= `
-        <div class="col">
-        <div class="card" style="width: 18rem;">
-        
-          <div class="card-body">
-            <div class="row">
-              <div class="col-6">
-              <h5 class="card-title" style="font-size:13px;">${item.timestamp}</h5>
-              </div>
-              <div class="col-3">
-              <h6 class="badge rounded-pill bg-success mt-0 openAll" id="${index}">Open All</h6>
-              </div>
-              <div class="col-3 m-0">
-              <h6 class="badge rounded-pill bg-danger mt-0  delete" id="${index}">Delete</h6>
-              </div>
-            </div>    
-           <div >
-            
-            ${item.Tabs.map(tab=>{
-              return (`<li class="card-subtitle mb-2 mt-2 text-muted"><a href="${tab}">${tab}</a></li>`)
-          }).join("")
-        }   
-        </div>
-        
-        
-          </div>
-        </div>
+        <div class="col ">
+        <div class="card-container">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <div class="card-header sticky-top">
+                <button type="button" class="btn-close btn-close-white btn-close-sm delete" id="${index} aria-label="Close"></button>
+                <h5 class="card-title m-0 p-0" style="font-size:13px;">${item.timestamp}</h5>
+              </div> 
+              ${counter = 0}   
+              ${item.Tabs.map(tab=>{
+                return (`<li class="card-subtitle mb-2 mt-2 text-muted"><a href="${tab}">${tab}</a></li>`)
+              }).join("")
+            }   
+            </div>
+          </div>    
+          <div><h6 class="btn btn-sm mt-3 openAll" id="${index}">Open All</h6></div>
+        </div>   
       </div>
    `
     })

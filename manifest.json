@@ -5,10 +5,10 @@
     "manifest_version": 3,
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "camera_19.png"
+        "default_icon": "S_19.png"
     }, 
     "icons": {
-        "128": "camera_128.png"
+        "128": "S_128.png"
     },
     "options_page": "manage.html",
     "permissions": ["tabs","storage"]
