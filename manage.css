@@ -1,0 +1,138 @@
+/* Card Related CSS */
+body {
+  background-color: #0a192f;
+}
+
+body-loader {
+  animation: fadeInAnimation ease 5s;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h5 {
+  color: White;
+  margin-top: 30px;
+  font-family: emoji;
+  font-size: 30px;
+}
+
+p {
+  color: #64ffda;
+  font-family: emoji;
+  font-size: 13px;
+}
+.card-container {
+  display: flex;
+}
+
+.card {
+  height: 380px;
+  width: 100% !important;
+  max-height: 450px;
+  /* padding: 20px; */
+  background: #112747;
+  overflow-y: scroll;
+  margin-top: 5%;
+  transition: transform 500ms;
+  color: #878787;
+}
+
+.card-body {
+  padding: 35px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  height: 690px !important;
+  background-color: #0a192f;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* .card-header h5 {
+  font-size: 15px !important;
+} */
+.card-title {
+  color: white;
+  /* color: #64ffda; */
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Card Content */
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  font-family: emoji;
+  /* color: #878787; */
+  color: #64ffda;
+}
+
+a:hover {
+  color: #86afa6;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 50px;
+  height: 20px;
+}
+
+/* Buttons */
+.delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  font-size: 9px;
+  color: #000;
+}
+
+.openAll {
+  background: #112747;
+  border-radius: 0px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #64ffda;
+  margin: 34%;
+  margin-bottom: 10px;
+  padding: 10px;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  color: #64ffda;
+  transition: transform 40ms;
+}
+
+.openAll:hover {
+  transform: matrix(2);
+  color: #64ffda;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: #112747;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+}

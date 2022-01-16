@@ -1,158 +1,65 @@
 /* Popup box */
 #cont {
-    width:350px;
-    height:300px; 
+  width: 350px;
+  height: 300px;
 }
 
 body {
-    background: #2c302d;
+  background: #0b1e3a;
 }
-
 
 /* Logo CSS */
 .logo {
-    color: white;
-    font-size: 35px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    margin-top: 50px;
+  color: white;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
 }
 
 /* Popup text */
-p{
-    color: white;
-    font-family:"Roboto", sans-serif;
-    font-size: 10px;
-    margin:0 !important;
+p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  margin: 0 !important;
 }
 
-.header{
-    height: 80px;
-    border-bottom: 1px solid white;
+.header {
+  height: 80px;
+  border-bottom: 1px solid black;
 }
 
 .body {
-    margin-top: 10px;
-    height : 150px
+  margin-top: 10px;
+  height: 150px;
 }
 
 .footer {
-    height : 20px
+  height: 20px;
 }
 
 #snapTab {
-    color:white;
-    box-shadow: 8px 10px 8px black;
-    font-weight: bold;
+  color: white;
+  box-shadow: 8px 10px 8px black;
+  font-weight: bold;
 }
 
-
 #snapTab:hover {
-    color:white;
-    box-shadow: 0px 0px 0px black;
+  color: white;
+  box-shadow: 0px 0px 0px black;
 }
 
 #manageBtn {
-    background-color: yellowgreen;
-    color: black;
-    height: 40px;
-    width: 130px;
-    float: right;
+  background-color: transparent;
+  border-color: #64ffda;
+  color: #64ffda;
+  height: 40px;
+  width: 130px;
+  float: right;
 }
 
-#manageBtn:hover{
-    opacity: 0.6;
-    box-shadow: 8px yellow
-}
-
-
-/* Card Related CSS */
-.card {
-    height: 280px;
-    width: 80% !important;
-    max-height: 350px;
-    padding: auto;
-    background: #242625;
-    border-radius: 10px;
-    box-shadow: 25px 0px 50px #1b1c1b, -25px -25px 50px #2d302f;
-    overflow-y: scroll;
-    border-radius: 13px;
-    position: flex;
-    margin-left: 10%;
-    margin-top: 5%
-}
-
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    margin-top:-10px;
-}
-
-.card-header {
-    height: 60px;
-    background-color:#242625;
-}
-
-.card-title {
-    color:yellowgreen;
-    font-size:25px;
-    font-family: "Roboto", sans-serif;
-}
-
-.card-container {
-    display:grid;
-    width:80%;
-    height: 70%;
-    background-color:#242625;
-    align-items: center;
-    border-radius:50px
-    
-}
-
-/* Card Content */
-li ,a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 12px;
-    font-family: "Roboto", sans-serif;
-    color: white
-}
-
-a:hover {
-    color: rgb(189, 186, 189)
-}
-
-
-/* Scrollbar */
-
-::-webkit-scrollbar {
-    width: 1px; 
- }
-
-::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 50px;
-    height: 20px;
-  }
-
-
-/* Buttons */
-.delete {
-    position: absolute;
-    right: 0;
-    top:0;
-    display:block;
-    font-size: 9px;
-    color: #000;
-}
-
-.openAll {
-    background: yellowgreen;
-    border-radius: 50px;
-    color:black;
-    font-weight: bold;
-    cursor:pointer;
-    border: none;
-    margin-top:40%;
-    margin: 34%
+#manageBtn:hover {
+  opacity: 0.6;
+  box-shadow: 8px yellow;
 }
