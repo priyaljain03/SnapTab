@@ -51,7 +51,7 @@ p {
 }
 
 .card-header {
-  height: 690px !important;
+  height: 20px !important;
   background-color: #0a192f;
   width: 100%;
   top: 0;
@@ -59,9 +59,6 @@ p {
   padding: 0;
 }
 
-/* .card-header h5 {
-  font-size: 15px !important;
-} */
 .card-title {
   color: white;
   /* color: #64ffda; */
@@ -69,6 +66,12 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.tweet-style {
+  color: white;
+  font-size: 12px;
+  font-family: emoji;
+  line-height: 0%;
+}
 /* Card Content */
 li,
 a {
@@ -123,7 +126,7 @@ a:hover {
 }
 
 .openAll:hover {
-  transform: matrix(2);
+  opacity: 0.8;
   color: #64ffda;
 }
 
