@@ -1,6 +1,3 @@
-console.log("Manage file loading")
-
-
 function showItems() {
   chrome.storage.local.get("Alltabs", (items) => {
 
