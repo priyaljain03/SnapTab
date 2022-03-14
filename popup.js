@@ -29,6 +29,7 @@ document.getElementById("snapTab").addEventListener('click', (e) => {
             }
             listOfItems.unshift(obj)
             chrome.storage.local.set({ "Alltabs": listOfItems }, () => {
+
                 e.target.innerHTML = "Snapped"
                 // window.close()  
             })
