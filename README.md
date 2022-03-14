@@ -6,4 +6,4 @@ User can easily access these urls later on .
 
 User can Open all the urls at once or also access one link at a time from the same page .
 
-![](./images/manage1.png)
+![](./images/manage.png)
